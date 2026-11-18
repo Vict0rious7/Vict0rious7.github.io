@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vict0rious7.github.io/sitemap.xml

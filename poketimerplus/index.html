@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PokeTimerPlus: Pokémon RNG timer (EonTimer + FlowTimer)</title>
+<meta name="description" content="PokeTimerPlus is a free all-in-one RNG timer for Pokémon on real hardware: EonTimer&#x27;s timers and calibration, FlowTimer&#x27;s flowing targets, and beeps accurate to a fraction of a millisecond. Windows and macOS.">
+<link rel="canonical" href="https://vict0rious7.github.io/poketimerplus/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PokeTimerPlus: Pokémon RNG timer (EonTimer + FlowTimer)">
+<meta property="og:description" content="PokeTimerPlus is a free all-in-one RNG timer for Pokémon on real hardware: EonTimer&#x27;s timers and calibration, FlowTimer&#x27;s flowing targets, and beeps accurate to a fraction of a millisecond. Windows and macOS.">
+<meta property="og:url" content="https://vict0rious7.github.io/poketimerplus/">
+<meta property="og:image" content="https://vict0rious7.github.io/img/poketimerplus.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="/img/poketimerplus.png">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "PokeTimerPlus", "description": "PokeTimerPlus is a free all-in-one RNG timer for Pokémon on real hardware: EonTimer's timers and calibration, FlowTimer's flowing targets, and beeps accurate to a fraction of a millisecond. Windows and macOS.", "url": "https://vict0rious7.github.io/poketimerplus/", "applicationCategory": "GameApplication", "operatingSystem": "Windows, macOS", "image": "https://vict0rious7.github.io/img/poketimerplus.png", "license": "https://www.gnu.org/licenses/gpl-3.0.html", "codeRepository": "https://github.com/Vict0rious7/PokeTimerPlus", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "author": {"@type": "Person", "name": "Vict0rious7", "url": "https://github.com/Vict0rious7"}}</script>
+</head>
+<body>
+<header><a href="/">Vict0rious7</a></header>
+<main>
+<div class="hero"><img src="/img/poketimerplus.png" alt="PokeTimerPlus logo" width="96" height="96"><div><h1>PokeTimerPlus</h1><p class="lead">All-in-one RNG timer for Pokémon on real hardware.</p></div></div>
+<p>PokeTimerPlus brings together <a href="https://github.com/DasAmpharos/EonTimer">EonTimer</a>'s timers and calibration and <a href="https://github.com/stringflow/FlowTimer">FlowTimer</a>'s flowing targets, with beeps that land when they should. It has the same look as PokeFinderPlus. Work in progress: report bugs in <a href="https://github.com/Vict0rious7/PokeTimerPlus/issues">the issues</a>.</p>
+<div class="btns"><a class="btn primary" href="https://github.com/Vict0rious7/PokeTimerPlus/releases/latest">Download</a><a class="btn" href="https://github.com/Vict0rious7/PokeTimerPlus">Source on GitHub</a></div>
+<h2>Beeps on time</h2>
+<ul>
+<li>Beeps are written into an audio stream that stays open, at exact sample positions. Measured on a MacBook Air: every beep within 0.2 ms, including on battery, with a video playing and on a Bluetooth speaker.</li>
+<li>Drift between the sound card's clock and the system clock is detected and corrected between countdowns.</li>
+<li>No network access at all, so nothing fails when you're offline.</li>
+</ul>
+<h2>Organised by console</h2>
+<ul>
+<li>Tabs for GB/GBA, DS, 3DS and Switch, each listing its RNG types, with a Custom timer on every tab.</li>
+<li>Ruby/Sapphire/Emerald wild, static, fishing and eggs; FireRed/LeafGreen static, wild and eggs; Diamond/Pearl/Platinum and HeartGold/SoulSilver; X/Y Trainer ID.</li>
+<li>FireRed/LeafGreen timer with seed time and target advance, each with its own calibration, matching PokeFinderPlus' initial seed results.</li>
+<li>&quot;Played on&quot;: GBA, GBA game on DS, open_agb_firm, Game Boy Interface, Switch, DS, 3DS, or any frame rate.</li>
+</ul>
+<h2>Calibration that sticks</h2>
+<ul>
+<li>Save each RNG type's calibration to your profile, so it's filled in next time.</li>
+<li>&quot;Hit&quot; fields on every timer: type what you got, and the calibration is corrected.</li>
+<li>Flowing targets: start the clock, then type each target when you know it.</li>
+</ul>
+<h2>Download</h2>
+<p>Get the latest version on the <a href="https://github.com/Vict0rious7/PokeTimerPlus/releases/latest">Releases page</a>, under Assets.</p>
+<ul>
+<li><strong>Windows 10 / 11:</strong> <code>PokeTimerPlus-windows.zip</code>. Unzip and run <code>PokeTimerPlus.exe</code>. If Windows shows &quot;Windows protected your PC&quot;, click More info → Run anyway.</li>
+<li><strong>macOS (Intel or Apple Silicon):</strong> <code>PokeTimerPlus-macos.zip</code>. Move the app to Applications, then right-click → Open the first time.</li>
+</ul>
+<h2>License and credits</h2>
+<p>GPL-3.0. Based on EonTimer by DasAmpharos and FlowTimer by stringflow. The full credits are in the <a href="https://github.com/Vict0rious7/PokeTimerPlus#readme">README</a>.</p>
+</main>
+<footer><p>Made by <a href="https://github.com/Vict0rious7">Vict0rious7</a>. Free and open source.</p><p>Pokémon is a trademark of Nintendo, Creatures Inc. and GAME FREAK inc. These projects are fan-made and not affiliated with or endorsed by them.</p></footer>
+</body>
+</html>

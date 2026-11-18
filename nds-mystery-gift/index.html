@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NDS Mystery Gift server for Pokémon DPPt and HGSS on a real DS</title>
+<meta name="description" content="A self-hosted Mystery Gift server for Pokémon Diamond, Pearl, Platinum, HeartGold and SoulSilver. Receive Wonder Card events on a real Nintendo DS over Wi-Fi, with no ROM patches.">
+<link rel="canonical" href="https://vict0rious7.github.io/nds-mystery-gift/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="NDS Mystery Gift server for Pokémon DPPt and HGSS on a real DS">
+<meta property="og:description" content="A self-hosted Mystery Gift server for Pokémon Diamond, Pearl, Platinum, HeartGold and SoulSilver. Receive Wonder Card events on a real Nintendo DS over Wi-Fi, with no ROM patches.">
+<meta property="og:url" content="https://vict0rious7.github.io/nds-mystery-gift/">
+
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="/img/favicon.svg">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareSourceCode", "name": "NDS Pokémon Mystery Gift server", "description": "A self-hosted Mystery Gift server for Pokémon Diamond, Pearl, Platinum, HeartGold and SoulSilver. Receive Wonder Card events on a real Nintendo DS over Wi-Fi, with no ROM patches.", "codeRepository": "https://github.com/Vict0rious7/NDS-pokemon-mystery-gift-distribution", "license": "https://www.gnu.org/licenses/gpl-3.0.html", "author": {"@type": "Person", "name": "Vict0rious7", "url": "https://github.com/Vict0rious7"}}</script>
+</head>
+<body>
+<header><a href="/">Vict0rious7</a></header>
+<main>
+<h1>NDS Mystery Gift server</h1>
+<p class="lead">Receive Mystery Gift events in Pokémon Diamond, Pearl, Platinum, HeartGold and SoulSilver on a real Nintendo DS, from your own computer.</p>
+<p>A self-hosted server that answers your DS's Mystery Gift request over Wi-Fi, the way Nintendo's servers used to. No ROM patches and no changes to your cartridge or console.</p>
+<div class="btns"><a class="btn primary" href="https://github.com/Vict0rious7/NDS-pokemon-mystery-gift-distribution#readme">Setup guide</a><a class="btn" href="https://github.com/Vict0rious7/NDS-pokemon-mystery-gift-distribution">Source on GitHub</a></div>
+<h2>What works</h2>
+<ul>
+<li>Generation 4 games: Diamond, Pearl, Platinum, HeartGold and SoulSilver.</li>
+<li>Original DS, DS Lite, DSi and 3DS (Gen 4 games use the DS connection slots).</li>
+<li>Event files (<code>.myg</code>) from the preserved distributions, for example <a href='https://github.com/InternalLoss/DLS1-Files'>DLS1-Files</a>.</li>
+</ul>
+<h2>What you need</h2>
+<ul>
+<li>A computer with Docker and OpenSSL.</li>
+<li>A Wi-Fi access point with WEP or no security: Gen 4 games can't use WPA.</li>
+<li>Your own certificate file. None is included; the <a href='https://github.com/Vict0rious7/NDS-pokemon-mystery-gift-distribution#certificate-setup'>setup guide</a> explains where it goes.</li>
+</ul>
+<h2>How it works</h2>
+<p>Custom DNS on your DS sends Nintendo's Wi-Fi Connection addresses to your computer, which handles the connection check, the login and the three download steps of a Mystery Gift. The full explanation is in the <a href="https://github.com/Vict0rious7/NDS-pokemon-mystery-gift-distribution#readme">README</a>.</p>
+<h2>License</h2>
+<p>GPL-3.0. Event files come from the ProjectPokemon community's preservation work.</p>
+</main>
+<footer><p>Made by <a href="https://github.com/Vict0rious7">Vict0rious7</a>. Free and open source.</p><p>Pokémon is a trademark of Nintendo, Creatures Inc. and GAME FREAK inc. These projects are fan-made and not affiliated with or endorsed by them.</p></footer>
+</body>
+</html>
